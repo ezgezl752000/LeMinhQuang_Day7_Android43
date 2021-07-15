@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LeMinhQuang_Day5_Android43</string>
+
+    ------Login------
+    <string name="Username">UserName</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+</resources>

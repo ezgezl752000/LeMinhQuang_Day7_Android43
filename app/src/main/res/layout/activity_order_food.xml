@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:backgroundTint="#DCDCDC"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeMinTextSize="20sp"
+            android:text="Food order">
+        </TextView>
+        <ImageButton
+            android:id="@+id/ibCart"
+            android:layout_margin="10dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/shopping_cart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"></ImageButton>
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_marginRight="5dp"
+            android:layout_centerInParent="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/circle_rounded"
+            android:gravity="center"
+            android:text="0"></TextView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome KhoaHA"
+        android:textSize="20sp"></TextView>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <ListView
+            android:id="@+id/lvFood"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"></ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price"
+            android:textSize="15sp"
+            ></TextView>
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0$"
+            android:textSize="15sp"
+            ></TextView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnOrder"
+        app:backgroundTint="@null"
+        android:theme="@style/Button.White"
+        android:background="@drawable/rounded_button"
+        android:text="Order"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></Button>
+
+    <TextView
+        android:textSize="13sp"
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+</LinearLayout>
